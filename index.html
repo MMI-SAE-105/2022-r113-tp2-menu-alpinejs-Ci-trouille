@@ -49,5 +49,18 @@
       nemo aliquid pariatur quam voluptates animi laudantium, aperiam
       consectetur nobis enim.
     </p>
+     
+    <dl x-data="{open1 : false}">
+      <dt @click="open1 =! open1">Lorem.</dt>
+      <dd x-show="open1">Lorem ipsum dolor sit amet.</dd>
+    </dl>
+    <dl x-data="{open2 : false}">
+      <dt @click="open2 =! open2">Atque!</dt>
+      <dd x-show="open2">Quaerat necessitatibus eius delectus tempora.</dd>
+    </dl>
+    <dl x-data="{open3 : false}">
+      <dt @click="open3 =! open3">Distinctio?</dt>
+      <dd x-show="open3">Amet ducimus commodi in debitis.</dd>
+    </dl>
   </body>
 </html>
